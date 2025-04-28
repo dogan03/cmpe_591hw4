@@ -42,3 +42,7 @@ def collectTrajectories(
         print("Stopping collection...")
         print("Saving trajectories with length: ", states_arr.__len__())
         np.savez(trajectory_file_path, *states_arr)
+
+
+if __name__ == "__main__":
+    collectTrajectories(n_trajectories=1000)
